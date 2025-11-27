@@ -6,7 +6,7 @@ commit_pins = []
 [hypricons]
 description = "Shows app icon briefly when launching applications"
 authors = ["PurpleLines"]
-output = "hypricons.so"
+output = "build/libhypricons.so"
 build = [
     "meson setup build --buildtype=release",
     "ninja -C build"
