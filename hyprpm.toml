@@ -1,0 +1,13 @@
+[repository]
+name = "hypricons"
+authors = ["PurpleLines"]
+commit_pins = []
+
+[hypricons]
+description = "Shows app icon briefly when launching applications"
+authors = ["PurpleLines"]
+output = "hypricons.so"
+build = [
+    "meson setup build --buildtype=release",
+    "ninja -C build"
+]
